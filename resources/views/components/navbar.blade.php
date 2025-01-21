@@ -54,25 +54,18 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="/index" class="logo">
-                        <img src="/assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
+                    <div class="logo justify-align-center justify-content-center">
+                        <h3 class="weblogo" draggable="false"><i class="fa-solid fa-crown"></i> PRINCE</h3>
                     </div>
-                    <!-- ***** Search End ***** -->
+                    <!-- ***** Logo End ***** -->
+            
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="/" class="active">Home</a></li>
-                        <li><a href="/browse">Browse</a></li>
-                        <li><a href="/details">Details</a></li>
-                        <li><a href="/streams">Streams</a></li>
-                        <li><a href="/profile">Profile <img src="/assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="/" draggable="false">Home</a></li>
+                        <li><a href="/browse" draggable="false">Featured</a></li>
+                        <li><a href="/details" draggable="false">Details</a></li>
+                        <li><a href="/streams" draggable="false">Streams</a></li>
+                        <li><a href="/profile mt-3" draggable="false">Works <i class="fa-solid fa-star works"></i></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>

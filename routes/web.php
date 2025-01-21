@@ -20,4 +20,8 @@ Route::get('/profile', function () {
 
 Route::get('/streams', function () {
     return view('streams');
+
+});
+Route::get('/login', function () {
+    return view('login');
 });

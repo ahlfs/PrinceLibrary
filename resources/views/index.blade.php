@@ -1,199 +1,192 @@
 <x-navbar></x-navbar>
 
-  <div class="container">
+<div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
+        <div class="col-lg-12">
+            <div class="page-content">
 
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Ryōiki Tenkai</h6>
-                  <h6>Welcome To My Domain</h6>
-                  <h4><em>Browse</em> All My Collections</h4>
-                  <div class="main-button">
-                    <a href="browse.html">Get In Touch!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
+                <!-- ***** Banner Start ***** -->
+                <div class="main-banner">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="header-text">
+                                <h6>Ryōiki Tenkai</h6>
+                                <h6>Welcome To My Domain</h6>
+                                <h4><em>Browse</em> All My Works</h4>
 
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Who</em> Am I ?</h4>
-                </div>
-                <div class="row">
-                  <div class="col-md-4  ">
-                    <div class="profile-card-2"><img src="/assets/images/aku.jpg" class="img img-responsive">
-                        <div class="profile-name">Prince Al</div>
-                        <div class="profile-icons"><a href="#"><p><i class="fa-brands fa-square-instagram fa-2xl"></i></p></a></div>
-                    </div>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Most Popular End ***** -->
-
-           <!-- ***** Most Popular Start ***** -->
-           <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Who</em> Am I ?</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="/assets/images/popular-01.jpg" alt="">
-                      <h4>Fortnite<br><span>Sandbox</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="/assets/images/popular-02.jpg" alt="">
-                      <h4>PubG<br><span>Battle S</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="/assets/images/popular-03.jpg" alt="">
-                      <h4>Dota2<br><span>Steam-X</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="/assets/images/popular-04.jpg" alt="">
-                      <h4>CS-GO<br><span>Legendary</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item inner-item">
-                            <img src="/assets/images/popular-05.jpg" alt="">
-                            <h4>Mini Craft<br><span>Legendary</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
+                                <div class="main-button">
+                                    <a href="browse.html">Get In Touch!</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item">
-                            <img src="/assets/images/popular-06.jpg" alt="">
-                            <h4>Eagles Fly<br><span>Matrix Games</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
+                    </div>
+                </div>
+                <!-- ***** Banner End ***** -->
+
+                <!-- ***** Who Am i Start ***** -->
+                <div class="most-popular">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="heading-section">
+                                <h4><em>Who</em> Am I ?</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="profile-card-2"><img src="/assets/images/aku.jpg"
+                                            class="img img-responsive">
+                                        <div class="profile-name">Prince Al</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+
+                                    <div class="about-text go-to">
+                                        <h3 class="dark-color">Muhamad Alamsyah Ahlul Firdaus</h3>
+                                        <h6 class="theme-color lead">A Fullstack Web Developer
+                                        </h6>
+                                        <p>I’m on a mission to create software solutions to real-world challenges. I’m
+                                            always investigating the massive terrain of technology, from AI and machine
+                                            learning to web development.</p>
+                                        <div class="row about-list">
+                                            <div class="col-md-8">
+                                                <div class="media">
+                                                    <label><i class="fa-brands fa-github"></i> Github</label>
+                                                    <p>ahlfs</p>
+                                                </div>
+                                                <div class="media">
+                                                    <label><i class="fa-solid fa-code"></i> Mastery</label>
+                                                    <p>PHP, Javascript, Python</p>
+                                                </div>
+                                                <div class="media">
+                                                    <label><i class="fa-solid fa-earth-asia"></i> Residence</label>
+                                                    <p>Indonesia</p>
+                                                </div>
+                                                <div class="media">
+                                                    <label><i class="fa-solid fa-heart"></i> Interest</label>
+                                                    <p>Technology, Psychology, History</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="loader mt-5">
+                                                    <div class="box1"></div>
+                                                    <div class="box2"></div>
+                                                    <div class="box3"></div>
+                                                </div>
+                                            </div>
+                                            <ul class="social-icons justify-content-center align-items-center mt-4">
+                                                <a target="_blank" href="https://www.instagram.com/ahlfs_">
+                                                    <li class="instagram"><i class="fa-brands fa-instagram"></i></li>
+                                                </a>
+                                                <a target="_blank"
+                                                    href="https://www.facebook.com/profile.php?id=100081067495764">
+                                                    <li class="facebook"><i class="fa-brands fa-facebook"></i></li>
+                                                </a>
+                                                <a target="_blank"
+                                                    href="https://www.linkedin.com/in/muhamad-alamsyah-ahlul-firdaus-b3652128b/">
+                                                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i></li>
+                                                </a>
+                                                <a target="_blank" href="https://github.com/ahlfs">
+                                                    <li class="github"><i class="fa-brands fa-github-alt"></i></li>
+                                                </a>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Who Am I End ***** -->
+                
+
+                <!-- ***** Send Message Start ***** -->
+                <div class="gaming-library">
+                   
+                        <div class="heading-section">
+                            <h4><em>Send</em> Message</h4>
+                        </div>
+
+                        <form class="form">
+                       <div class="notification">
+                        <div class="notititle">Send as Anonymous <i class="fa-solid fa-masks-theater"></i></div>
+                        <div class="notibody">
+                            <label for="check">
+                                <input checked="" id="check" type="checkbox">
+                                <div class="check-bg">
+                                  <span class="check-span"></span>
+                                </div>
+                              </label>
+                              
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="/assets/images/popular-07.jpg" alt="">
-                      <h4>Warface<br><span>Max 3D</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="/assets/images/popular-08.jpg" alt="">
-                      <h4>Warcraft<br><span>Legend</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">Discover Popular</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Most Popular End ***** -->
+                            
+                              <div class="group mt-4">
+                              <input placeholder="" type="text" required="">
+                              <label for="name">Name</label>
+                              </div>
+                          <div class="group">
+                              <input placeholder="" type="email" id="email" name="email" required="" autocomplete="off">
+                              <label for="email">Email</label>
+                              </div>
+                          <div class="group">
+                              <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+                              <label for="comment">Message</label>
+                          </div>
+                              <button class="buttonSubmit" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                            </form>
+                          
+                       
 
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Gaming</em> Library</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="/assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="/assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="/assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
+                    
+                </div>
+                <!-- ***** Send Message End ***** -->
+
+
+                <!-- ***** Gaming Library Start ***** -->
+                <div class="gaming-library">
+                    <div class="col-lg-12">
+                        <div class="heading-section">
+                            <h4><em>My Other</em> Website</h4>
+                        </div>
+                        <div class="item">
+                            <ul>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <li><img src="/assets/images/harmonify.png" alt=""
+                                                class="templatemo-item"></li>
+                                        <li>
+                                            <h4>Melodica</h4><span>Social Media</span>
+                                        </li>
+                                        <li>
+                                            <h4>Status</h4><span><i class="fa-solid fa-circle-check"
+                                                    style="color: green"></i> Active</span>
+                                        </li>
+                                    </div>
+                                    <div class="col-3 d-flex justify-content-end">
+                                        <li>
+                                            <div class="main-border-button"><a target="_blank"
+                                                    href="https://www.melodica.my.id">Visit</a>
+                                            </div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="main-button">
+                            <a href="profile.html">View My Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Gaming Library End ***** -->
             </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Gaming Library End ***** -->
         </div>
-      </div>
     </div>
-  </div>
-  
-  <x-footer></x-footer>
+</div>
+
+<x-footer></x-footer>
