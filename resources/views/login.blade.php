@@ -5,7 +5,7 @@
 
     <div class="page-content" style="">
 
-        <div class="row">
+        <div class="row header-text">
             <div class="col-tab1">
                 <div class="d-flex justify-content-center mt-4">
                     <div class="card">

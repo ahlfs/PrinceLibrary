@@ -136,7 +136,7 @@ body .page-content {
 
 p {
   font-size: 15px;
-  color: #666;
+  color: #CCC;
   line-height: 30px;
   margin-bottom: 0px;
 }
@@ -369,6 +369,7 @@ Header Style
   display: flex;
   padding: 15px 0px;
   border-radius: 50px;
+  position: sticky;
 }
 
 .background-header .main-nav {
@@ -1171,7 +1172,6 @@ Live Stream Style
 */
 
 .live-stream {
-  margin-top: 60px;
   border-radius: 23px;
   background-color: #1f2122;
   padding: 30px;
@@ -1225,7 +1225,7 @@ Live Stream Style
   margin: 0px 5px;
 }
 
-.live-stream .hover-effect ul li a {
+.live-stream .hover-effect ul li {
   background-color: rgba(236, 96, 144, 0.9);
   padding: 5px 10px;
   border-radius: 23px;
@@ -1259,7 +1259,7 @@ Live Stream Style
   margin-top: 8px;
   font-size: 20px;
   font-weight: 700;
-  margin-left: 61px;
+  margin-left: 11px;
 }
 
 .live-stream .main-button {
@@ -1275,9 +1275,18 @@ Featured Banner Style
 
 .feature-banner .thumb {
   position: relative;
-  max-height: 305px;
+  height: 100%;
+  width: 80%;
   overflow: hidden;
-  border-radius: 23px;;
+  border-radius: 23px;
+}
+
+.feature-banner .thumb video {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 23px;
 }
 
 .feature-banner .thumb a {
@@ -1342,13 +1351,13 @@ Game Details Style
 }
 
 .game-details .content .left-info ul li {
-  color: #fff;
+  color: #CCC;
   font-size: 14px;
   margin-bottom: 3px;
 }
 
 .game-details .content .left-info ul li:first-child i {
-  color: yellow;
+  color: #CCC;
 }
 
 .game-details .content .left-info ul li:last-child i {
@@ -1362,24 +1371,24 @@ Game Details Style
   margin-bottom: 30px;
 }
 
-.game-details .content .right-info ul li {
-  display: inline-block;
-  width: 23%;
+.game-details .content .right-info {
+  text-transform: capitalize;
   text-align: center;
   font-size: 14px;
   color: #fff;
 }
 
-.game-details .content .right-info ul li i {
-  display: block;
-  margin-bottom: 12px;
+.game-details .content .right-info .row .col-4 .text {
+  color: #CCC;
 }
 
-.game-details .content .right-info ul li:first-child i {
-  color: yellow;
-} 
+.game-details .content .right-info .row .col-4 .status {
+  color: greenyellow;
+}
 
-.game-details .content .right-info ul li i {
+
+
+.game-details .content .right-info .row .col-4 .text i {
   color: #ec6090;
 }
 
@@ -1402,7 +1411,6 @@ Other Related Style
   border-radius: 23px;
   padding: 30px 30px 0px 30px;
   background-color: #1f2122;
-  margin-top: 60px;
 }
 
 .other-games .item {
@@ -1443,7 +1451,7 @@ Other Related Style
 }
 
 .other-games ul li:first-child i {
-  color: yellow;
+  color: #CCC;
 }
 
 .other-games ul li:last-child i {

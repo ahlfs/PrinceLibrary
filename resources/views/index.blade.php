@@ -15,7 +15,7 @@
                                 <h4><em>Browse</em> All My Works</h4>
 
                                 <div class="main-button">
-                                    <a href="browse.html">Get In Touch!</a>
+                                    <a href="/works">Get In Touch!</a>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="profile-card-2"><img src="/assets/images/aku.jpg"
+                                    <div class="profile-card-2"><img src="/assets/images/aku3.jpg"
                                             class="img img-responsive">
                                         <div class="profile-name">Prince Al</div>
                                     </div>
@@ -41,7 +41,7 @@
 
                                     <div class="about-text go-to">
                                         <h3 class="dark-color">Muhamad Alamsyah Ahlul Firdaus</h3>
-                                        <h6 class="theme-color lead">A Fullstack Web Developer
+                                        <h6 class="theme-color lead">A Fullstack Developer
                                         </h6>
                                         <p>I’m on a mission to create software solutions to real-world challenges. I’m
                                             always investigating the massive terrain of technology, from AI and machine
@@ -100,47 +100,51 @@
                     </div>
                 </div>
                 <!-- ***** Who Am I End ***** -->
-                
+
 
                 <!-- ***** Send Message Start ***** -->
                 <div class="gaming-library">
-                   
-                        <div class="heading-section">
-                            <h4><em>Send</em> Message</h4>
+
+                    <div class="heading-section">
+                        <h4><em>Send</em> Message</h4>
+                    </div>
+
+                    <form class="form">
+                        <div class="notification">
+                            <div class="notititle">Send as Anonymous <i class="fa-solid fa-masks-theater"></i></div>
+                            <div class="notibody">
+                                <label for="anonymousButton">
+                                    <input id="anonymousButton" type="checkbox">
+                                    <div class="check-bg">
+                                        <span class="check-span"></span>
+                                    </div>
+                                </label>
+
+                            </div>
                         </div>
 
-                        <form class="form">
-                       <div class="notification">
-                        <div class="notititle">Send as Anonymous <i class="fa-solid fa-masks-theater"></i></div>
-                        <div class="notibody">
-                            <label for="check">
-                                <input checked="" id="check" type="checkbox">
-                                <div class="check-bg">
-                                  <span class="check-span"></span>
-                                </div>
-                              </label>
-                              
+                        <div class="group mt-4" id="formNameMessage">
+                            <input placeholder="" type="text" required="">
+                            <label for="name">Name</label>
                         </div>
-                      </div>
-                            
-                              <div class="group mt-4">
-                              <input placeholder="" type="text" required="">
-                              <label for="name">Name</label>
-                              </div>
-                          <div class="group">
-                              <input placeholder="" type="email" id="email" name="email" required="" autocomplete="off">
-                              <label for="email">Email</label>
-                              </div>
-                          <div class="group">
-                              <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
-                              <label for="comment">Message</label>
-                          </div>
-                              <button class="buttonSubmit" type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
-                            </form>
-                          
-                       
+                        <div class="group" id="formEmailMessage">
+                            <input placeholder="" type="email" id="email" name="email" required=""
+                                autocomplete="off">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="group" id="formMessage">
+                            <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+                            <label for="comment">Message</label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                        <button class="buttonSubmit" type="submit"><i class="fa-solid fa-paper-plane"></i>
+                            Send</button>
+                        </div>
+                    </form>
 
-                    
+
+
+
                 </div>
                 <!-- ***** Send Message End ***** -->
 
@@ -179,7 +183,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="main-button">
-                            <a href="profile.html">View My Projects</a>
+                            <a href="/featured">View My Projects</a>
                         </div>
                     </div>
                 </div>

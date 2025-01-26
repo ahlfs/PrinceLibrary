@@ -6,20 +6,25 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/browse', function () {
-    return view('browse');
+Route::get('/featured', function () {
+    return view('featured');
 });
 
-Route::get('/details', function () {
-    return view('details');
+Route::get('/works', function () {
+    return view('works');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
+Route::get('/admin', function () {
+    return view('admin');
 });
 
 Route::get('/streams', function () {
     return view('streams');
+
+});
+
+Route::get('/writing', function () {
+    return view('writing');
 
 });
 Route::get('/login', function () {

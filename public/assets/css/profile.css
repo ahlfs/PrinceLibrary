@@ -582,11 +582,11 @@ Loader
     background-color: #e75e8d;
   }
   
-  label[for="check"] input {
+  label[for="anonymousButton"] input {
     display: none;
   }
   
-  label[for="check"] .check-bg {
+  label[for="anonymousButton"] .check-bg {
     width: 50px;
     padding: 2.5px;
     background: #27292a;
@@ -595,7 +595,7 @@ Loader
     transition: background .1s, border .1s;
   }
   
-  label[for="check"] .check-span {
+  label[for="anonymousButton"] .check-span {
     display: block;
     background: rgb(219, 219, 219);
     width: 25px;
@@ -604,12 +604,12 @@ Loader
     transition: background .1s, border .1s, margin-left .325s;
   }
   
-  label[for="check"] input:checked ~ .check-bg {
+  label[for="anonymousButton"] input:checked ~ .check-bg {
     background-color: #e75e8d;
     border: 1px solid #e75e8d;
   }
   
-  label[for="check"] input:checked ~ .check-bg .check-span {
+  label[for="anonymousButton"] input:checked ~ .check-bg .check-span {
     background: white;
     border: 0;
     margin-left: 18px;
@@ -630,7 +630,7 @@ Loader
     border-radius: 1rem;
     overflow: hidden;
     font-size: 16px;
-    --gradient: linear-gradient(to bottom, #e75e8d, #3d83ff, #7e61ff);
+    --gradient: linear-gradient(to bottom, #e75e8d, #DA498D, #69247C);
     --color: #CCC
   }
   
