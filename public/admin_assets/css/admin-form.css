@@ -1,0 +1,115 @@
+.myform-button {
+    appaerance: none;
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .myform-container {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem;
+  }
+  
+  .myform-modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 15px 30px 0 rgba(0, 125, 171, 0.15);
+    border-radius: 10px;
+  }
+  
+  .my-form-modal__header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .myform-modal__body {
+    padding: 1rem 1rem;
+  }
+  
+  .myform-modal__footer {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .myform-modal__title {
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  .myform-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s ease;
+  }
+  
+  .myform-button--icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border-radius: 0.25rem;
+  }
+  
+  .myform-button--icon:focus, .myform-button--icon:hover {
+    background-color: #ededed;
+  }
+  
+  .myform-button--primary {
+    background-color: #e75e8d;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  
+  .myform-button--primary:hover {
+    background-color: #ec6090;
+  }
+  
+  .myform-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .myform-input + .myform-input {
+    margin-top: 1.75rem;
+  }
+  
+  .myform-input__label {
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+  
+  .myform-input__field {
+    display: block;
+    margin-top: 0.5rem;
+    border: 1px solid #DDD;
+    border-radius: 0.25rem;
+    padding: 0.75rem 0.75rem;
+    transition: 0.15s ease;
+  }
+  
+  .myform-input__field:focus {
+    outline: none;
+    border-color: #e75e8d;
+    box-shadow: 0 0 0 1px #e75e8d;
+  }
+  
+  .myform-input__field--textarea {
+    min-height: 100px;
+    max-width: 100%;
+  }
+  
+  .myform-input__description {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    color: #8d8d8d;
+  }
