@@ -20,7 +20,7 @@
                                     </label>
                                 </div>
 
-                                <h2>Dunning Kruger's Effect</h2>
+                                <h2>{{ $data->title }}</h2>
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <img src="assets/images/details-01.jpg" alt=""
@@ -35,43 +35,7 @@
                                             style="border-radius: 23px; margin-bottom: 30px;">
                                     </div>
                                     <div class="col-lg-12">
-                                        <p class="indolang" id="indolang">Efek Dunning–Kruger adalah bias kognitif di mana orang
-                                            dengan kompetensi terbatas dalam domain tertentu melebih-lebihkan kemampuan
-                                            mereka. Efek ini pertama kali dijelaskan oleh David Dunning dan Justin
-                                            Kruger pada tahun 1999. Beberapa peneliti juga memasukkan efek sebaliknya
-                                            untuk orang yang berprestasi tinggi: kecenderungan mereka untuk meremehkan
-                                            keterampilan mereka. Dalam budaya populer, efek Dunning–Kruger sering
-                                            disalahpahami sebagai klaim tentang rasa percaya diri yang berlebihan secara
-                                            umum pada orang dengan kecerdasan rendah, bukan rasa percaya diri yang
-                                            berlebihan secara khusus pada orang yang tidak terampil dalam tugas
-                                            tertentu. Banyak penelitian serupa telah dilakukan. Efek Dunning–Kruger
-                                            biasanya diukur dengan membandingkan penilaian diri dengan kinerja objektif.
-                                            Misalnya, peserta dapat mengikuti kuis dan memperkirakan kinerja mereka
-                                            setelahnya, yang kemudian dibandingkan dengan hasil aktual mereka.
-                                            Penelitian asli difokuskan pada penalaran logis, tata bahasa, dan
-                                            keterampilan sosial. Penelitian lain telah dilakukan di berbagai tugas.
-                                            Penelitian tersebut mencakup keterampilan dari bidang-bidang seperti bisnis,
-                                            politik, kedokteran, mengemudi, penerbangan, memori spasial, ujian di
-                                            sekolah, dan literasi. Ada ketidaksepakatan tentang penyebab efek
-                                            Dunning–Kruger. Menurut penjelasan metakognitif, orang yang berkinerja buruk
-                                            salah menilai kemampuan mereka karena mereka gagal mengenali perbedaan
-                                            kualitatif antara kinerja mereka dan kinerja orang lain. Model statistik
-                                            menjelaskan temuan empiris sebagai efek statistik yang dikombinasikan dengan
-                                            kecenderungan umum untuk berpikir bahwa seseorang lebih baik daripada
-                                            rata-rata. Beberapa pendukung pandangan ini berpendapat bahwa efek
-                                            Dunning–Kruger sebagian besar merupakan artefak statistik. Model rasional
-                                            berpendapat bahwa keyakinan sebelumnya yang terlalu positif tentang
-                                            keterampilan seseorang adalah sumber penilaian diri yang salah. Penjelasan
-                                            lain mengklaim bahwa penilaian diri lebih sulit dan rawan kesalahan bagi
-                                            orang yang berkinerja rendah karena banyak dari mereka memiliki tingkat
-                                            keterampilan yang sangat mirip. Ada juga ketidaksepakatan tentang di mana
-                                            efek tersebut berlaku dan tentang seberapa kuatnya, serta tentang
-                                            konsekuensi praktisnya. Penilaian diri yang tidak akurat berpotensi
-                                            menyebabkan orang membuat keputusan yang buruk, seperti memilih karier yang
-                                            tidak sesuai untuk mereka, atau terlibat dalam perilaku berbahaya. Hal itu
-                                            juga dapat menghambat orang untuk mengatasi kekurangan mereka untuk
-                                            memperbaiki diri. Kritikus berpendapat bahwa efek seperti itu akan memiliki
-                                            konsekuensi yang jauh lebih buruk daripada yang diamati.</p>
+                                        <p class="indolang" id="indolang">{{ $data->content }}</p>
 
                                         <p class="englang" id="englang">The Dunning–Kruger effect is a cognitive bias in which people
                                             with limited competence in a particular domain overestimate their abilities.

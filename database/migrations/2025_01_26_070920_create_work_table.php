@@ -13,16 +13,17 @@ return new class extends Migration
     {
         Schema::create('work', function (Blueprint $table) {
             $table->id();
+            $table->string('page_id')->unique();
             $table->string('title');
             $table->text('content');
             $table->string('image');
             $table->string('category');
-            $table->integer('views');
-            $table->string('button_text');
-            $table->string('download_file');
-            $table->string('github_link');
-            $table->string('web_link');
-            $table->string('youtube_link');
+            $table->integer('view_encounter');
+            $table->string('download_file')->nullable();
+            $table->integer('download_encounter');
+            $table->string('github_link')->nullable();
+            $table->string('web_link')->nullable();
+            $table->string('youtube_link')->nullable();
             $table->timestamps();
         });
     }

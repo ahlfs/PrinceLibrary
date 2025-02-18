@@ -1,6 +1,4 @@
-body::-webkit-scrollbar {
-  display: none;
-}
+
 
 ::selection {
   background: #e75e8d;
@@ -73,9 +71,10 @@ body::-webkit-scrollbar {
   }
   
   .accept {
+    
     font-size: 0.75rem;
     line-height: 1rem;
-    background-color: rgb(17 24 39);
+    background-color: #e75e8d;
     font-weight: 500;
     border-radius: 0.5rem;
     color: #fff;
@@ -88,10 +87,37 @@ body::-webkit-scrollbar {
   }
   
   .accept:hover {
-    background-color: rgb(55 65 81);
+    color: #fff;
+    background-color: #ec6090;
   }
   
   .accept:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  .accept-red {
+    
+    font-size: 0.75rem;
+    line-height: 1rem;
+    background-color: #AA0114;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    border: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .accept-red:hover {
+    color: #fff;
+    background-color: #B52735;
+  }
+  
+  .accept-red:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
   }

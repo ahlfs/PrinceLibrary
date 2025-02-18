@@ -14,7 +14,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/assets/js/sweetalert.js"></script>
   
 
   <script src="/assets/js/isotope.min.js"></script>
@@ -23,6 +23,45 @@
   <script src="/assets/js/popup.js"></script>
   <script src="/assets/js/custom.js"></script>
   <script src="/assets/js/main.js"></script>
+
+  <script>
+     @if (session('postsuccess'))
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "success",
+            title: "{{ session('postsuccess') }}"
+        });
+    @endif
+
+    @if (session('postfailed'))
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "error",
+            title: "{{ session('postfailed') }}"
+        });
+    @endif
+    
+  </script>
 
 
   </body>

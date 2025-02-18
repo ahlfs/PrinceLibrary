@@ -9,5 +9,5 @@ class WorkModel extends Model
 {
     use HasFactory;
     protected $table = 'work';
-    protected $fillable = ['title', 'content', 'image', 'category', 'views', 'button_text', 'download_file', 'github_link', 'web_link', 'youtube_link'];
+    protected $fillable = ['page_id', 'title', 'content', 'image', 'category', 'view_encounter', 'button_text', 'download_file', 'github_link', 'web_link', 'youtube_link'];
 }

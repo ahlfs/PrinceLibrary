@@ -109,12 +109,13 @@
                         <h4><em>Send</em> Message</h4>
                     </div>
 
-                    <form class="form">
+                    <form class="form" action="/email-send" method="post">
+                        @csrf <!-- {{ csrf_field() }} -->
                         <div class="notification">
                             <div class="notititle">Send as Anonymous <i class="fa-solid fa-masks-theater"></i></div>
                             <div class="notibody">
                                 <label for="anonymousButton">
-                                    <input id="anonymousButton" type="checkbox">
+                                    <input id="anonymousButton" name="anonymous" value="on" type="checkbox">
                                     <div class="check-bg">
                                         <span class="check-span"></span>
                                     </div>
@@ -124,17 +125,16 @@
                         </div>
 
                         <div class="group mt-4" id="formNameMessage">
-                            <input placeholder="" type="text" required="">
-                            <label for="name">Name</label>
+                            <input placeholder="" type="text" id="nameku" name="name" required>
+                            <label for="nameku">Name</label>
                         </div>
                         <div class="group" id="formEmailMessage">
-                            <input placeholder="" type="email" id="email" name="email" required=""
-                                autocomplete="off">
-                            <label for="email">Email</label>
+                            <input placeholder="" type="email" id="emailku" name="email" required autocomplete="off">
+                            <label for="emailku">Email</label>
                         </div>
                         <div class="group" id="formMessage">
-                            <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
-                            <label for="comment">Message</label>
+                            <textarea placeholder="" id="comment" name="messageku" rows="5" required=""></textarea>
+                            <label for="messageku">Message</label>
                         </div>
                         <div class="d-flex justify-content-center">
                         <button class="buttonSubmit" type="submit"><i class="fa-solid fa-paper-plane"></i>
@@ -157,18 +157,25 @@
                         </div>
                         <div class="item">
                             <ul>
+                                @foreach ($data as $d)
                                 <div class="row">
+                                    
                                     <div class="col-8">
                                         <li><img src="/assets/images/harmonify.png" alt=""
                                                 class="templatemo-item"></li>
                                         <li>
-                                            <h4>Melodica</h4><span>Social Media</span>
+                                            <h4>{{ $d->web_name }}</h4><span>Social Media</span>
                                         </li>
                                         <li>
-                                            <h4>Status</h4><span><i class="fa-solid fa-circle-check"
-                                                    style="color: green"></i> Active</span>
+                                            <h4>Status</h4>
+                                            @if ($d->status == 0)
+                                            <span><i class="fa-solid fa-circle-check" style="color: green"></i> Active</span>
+                                            @else
+                                            <span><i class="fa-solid fa-circle-xmark" style="color: red"></i> Deactive</span>
+                                            @endif
                                         </li>
                                     </div>
+                                    @if ($d->status == 0)
                                     <div class="col-3 d-flex justify-content-end">
                                         <li>
                                             <div class="main-border-button"><a target="_blank"
@@ -176,7 +183,9 @@
                                             </div>
                                         </li>
                                     </div>
+                                    @endif
                                 </div>
+                                @endforeach
                             </ul>
                         </div>
 
@@ -195,14 +204,20 @@
 
 <script>
     const anonymousButton = document.getElementById("anonymousButton");
+    const nameInput = document.getElementById("nameku"); // Ambil elemen input name
+    const emailInput = document.getElementById("emailku"); // Ambil elemen input email
 anonymousButton.addEventListener("change", () => {
     if (anonymousButton.checked) {
         document.getElementById("formNameMessage").style.display = "none";
         document.getElementById("formEmailMessage").style.display = "none";
+        nameInput.required = false; // Gunakan langsung properti required
+        emailInput.required = false; // Gunakan langsung properti required
         document.getElementById("formMessage").classList.add("mt-4");
     } else if (!anonymousButton.checked) {
         document.getElementById("formNameMessage").style.display = "block";
         document.getElementById("formEmailMessage").style.display = "block";
+        nameInput.required = true; // Gunakan langsung properti required
+        emailInput.required = true; // Gunakan langsung properti required
         document.getElementById("formMessage").classList.remove("mt-4");
     }
 });

@@ -1,0 +1,62 @@
+.work-image {
+    width: 100%;
+    height: 100%;
+}
+
+.colku1 {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
+
+.colku2 {
+    flex: 0 0 67%;
+    max-width: 67%;
+}
+
+.colbro-33 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.colbro-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media (max-width: 992px) {
+    .work-image {
+        width: 75%;
+        height: 85%;
+    }
+    .colku1 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .colku2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .colbro-33 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .colbro-33:first-child {
+        margin-top: 0;
+    }
+
+
+    .colbro-50 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .colbro-50:last-child {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

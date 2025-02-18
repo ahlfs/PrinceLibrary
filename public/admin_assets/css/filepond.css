@@ -1032,6 +1032,7 @@
     margin-bottom: 1em;
 }
 .filepond--root .filepond--credits {
+    display: none;
     position: absolute;
     right: 0;
     opacity: 0.4;

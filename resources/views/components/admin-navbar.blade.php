@@ -21,6 +21,11 @@
     <!-- Custom styles for this template-->
     <link href="/admin_assets/css/sb-admin-2.css" rel="stylesheet">
     <link rel="stylesheet" href="/admin_assets/css/admin-card.css">
+
+    <link href="/admin_assets/css/filepond.css" rel="stylesheet" />
+    <link href="/admin_assets/css/filepond-imagepreview.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/admin_assets/css/admin-form.css">
     
 
     

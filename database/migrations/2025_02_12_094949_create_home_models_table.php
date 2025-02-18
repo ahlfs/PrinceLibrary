@@ -11,12 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin', function (Blueprint $table) {
-            $table->id()->primary();
+        Schema::create('home', function (Blueprint $table) {
+            $table->id();
             $table->string('page_id')->unique();
-            $table->string('username')->unique();
-            $table->string('email')->unique();
-            $table->string('password');
+            $table->string('web_name');
+            $table->enum('status', ['0', '1']);
+            $table->string('category');
+            $table->string('web_link')->nullable();
+            $table->integer('web_visit_encounter');
+            $table->string('web_image');
             $table->timestamps();
         });
     }
@@ -26,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin');
+        Schema::dropIfExists('home');
     }
 };

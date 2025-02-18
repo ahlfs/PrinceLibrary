@@ -1356,12 +1356,9 @@ Game Details Style
   margin-bottom: 3px;
 }
 
-.game-details .content .left-info ul li:first-child i {
-  color: #CCC;
-}
-
-.game-details .content .left-info ul li:last-child i {
+.game-details .content .left-info ul li i {
   color: #ec6090;
+  margin-right: 5px;
 }
 
 .game-details .content .right-info {
@@ -1378,17 +1375,21 @@ Game Details Style
   color: #fff;
 }
 
-.game-details .content .right-info .row .col-4 .text {
+.game-details .content .right-info .row .colbro-33 .text {
   color: #CCC;
 }
 
-.game-details .content .right-info .row .col-4 .status {
+.game-details .content .right-info .row .colbro-33 .status-yes {
   color: greenyellow;
+}
+
+.game-details .content .right-info .row .colbro-33 .status-no {
+  color: #AA0114;
 }
 
 
 
-.game-details .content .right-info .row .col-4 .text i {
+.game-details .content .right-info .row .colbro-33 .text i {
   color: #ec6090;
 }
 

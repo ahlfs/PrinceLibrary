@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use App\Models\TemporaryImageModel;
-use Illuminate\Support\Facades\Storage; // Import Storage
 
 use Illuminate\Http\Request;
 

@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin', function (Blueprint $table) {
-            $table->id()->primary();
-            $table->string('page_id')->unique();
-            $table->string('username')->unique();
-            $table->string('email')->unique();
-            $table->string('password');
+        Schema::create('personal_message', function (Blueprint $table) {
+            $table->id();
+            $table->string('sender_name');
+            $table->string('sender_email');
+            $table->text('sender_message');
+            $table->boolean('anonymous');
+            $table->dateTime('send_date');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin');
+        Schema::dropIfExists('personal_message');
     }
 };

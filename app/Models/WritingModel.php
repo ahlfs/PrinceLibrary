@@ -2,13 +2,11 @@
 
 namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Model; 
 
-class WritingModel extends Model implements HasMedia
+class WritingModel extends Model
 {
-    use HasFactory, InteractsWithMedia;
+    use HasFactory;
     protected $table = 'writing';
-    protected $fillable = ['title', 'content', 'image', 'views'];
+    protected $fillable = ['page_id','title', 'content', 'conten_english', 'image', 'view_encounter'];
 }
