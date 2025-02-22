@@ -6,15 +6,17 @@
 
     <div class="page-content">
 
-        <!-- ***** Featured Start ***** -->
+        <!-- ***** Work Banner Start ***** -->
 
         <div class="feature-banner header-text">
-            <div class="row">
+            
+                
+                @if ($data->youtube_link)
+                <div class="row">
                 <div class="col colku1 d-flex justify-content-center">
                     <img src="{{ asset('storage/uploads/uploaded_image/' . $data->image) }}" class="work-image"
                         alt="" style="border-radius: 23px;">
                 </div>
-                @if ($data->youtube_link)
                     <div class="col colku2">
                         <div class="thumb mx-auto d-flex justify-content-end align-content-center">
                             <iframe width="100%" height="100%" src="{{ $data->youtube_link }}"
@@ -23,17 +25,25 @@
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+                </div>
+                    @else
+                    <div class="row d-flex justify-content-center">
+                    <div class="col colku1 d-flex justify-content-center">
+                        <img src="{{ asset('storage/uploads/uploaded_image/' . $data->image) }}" class="work-image"
+                            alt="" style="border-radius: 23px;">
+                    </div>
+                </div>
                 @endif
 
 
 
 
-            </div>
+          
         </div>
 
-        <!-- ***** Featured End ***** -->
+        <!-- ***** Work Banner End ***** -->
 
-        <!-- ***** Details Start ***** -->
+        <!-- ***** Work Details Start ***** -->
         <div class="game-details">
             <div class="row">
                 <div class="col-lg-12">
@@ -53,7 +63,7 @@
                                         </div>
                                         <div class="colbro-50">
                                             <ul>
-                                                <li><i class="fa-solid fa-rotate-right"></i> {{ $edit_date }}</li>
+                                                <li><i class="fa-solid fa-rotate-right"></i>@if ($edit_date != null) {{ $edit_date }} @else No Update Yet @endif </li>
                                                 <li><i class="fa-regular fa-calendar"></i> {{ $upload_date }}</li>
                                             </ul>
                                         </div>
@@ -134,7 +144,7 @@
                 </div>
             </div>
         </div>
-        <!-- ***** Details End ***** -->
+        <!-- ***** Work Details End ***** -->
 
     </div>
 

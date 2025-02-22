@@ -18,7 +18,7 @@
                 </div>
                 <div class="myform-modal__body">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Web Name</label>
                                 <input class="myform-input__field" type="text" name="web_name" autocomplete="off">
@@ -30,7 +30,7 @@
 
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Web Link</label>
                                 <input class="myform-input__field" type="text" name="web_link" autocomplete="off">
@@ -75,7 +75,7 @@
             <div class="myform-modal">
                 <div class="myform-modal__body">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="colform-50">
 
                             <div class="myform-input">
                                 <label class="myform-input__label">Web Name</label>
@@ -98,7 +98,7 @@
 
                         </div>
 
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Web Link</label>
                                 <input class="myform-input__field" type="text" value="{{ $d->web_link }}" disabled>

@@ -20,7 +20,7 @@
                 <div class="myform-modal__body">
                     <div class="row">
 
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Title</label>
                                 <input class="myform-input__field" type="text" value="{{ $data->title }}" name="title">
@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Github Link</label>
                                 <input class="myform-input__field" type="text" value="{{ $data->github_link }}" name="github_link">

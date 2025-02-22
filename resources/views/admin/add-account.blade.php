@@ -18,7 +18,7 @@
                 </div>
                 <div class="myform-modal__body">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Username</label>
                                 <input class="myform-input__field" type="text" name="username" value="{{ old('', session('old_username')) }}" autocomplete="off">
@@ -34,7 +34,7 @@
                                 <input class="myform-input__field" type="password" name="confirmpassword" value="{{ old('', session('old_confirmpassword')) }}" autocomplete="off">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="colform-50">
                             <div class="myform-input">
                                 <label class="myform-input__label">Email</label>
                                 <input class="myform-input__field" type="text" name="email" value="{{ old('', session('old_email')) }}" autocomplete="off">

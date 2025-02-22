@@ -546,6 +546,12 @@ Loader
     top: 10px;
     background-color: transparent;
   }
+
+  .form .group input:not(:placeholder-shown) + label,
+.form .group textarea:not(:placeholder-shown) + label {
+  color: #e75e8d; /* Warna label saat placeholder tidak ditampilkan */
+  background-color: transparent;
+}
   
   .form .group input:focus,
   .form .group textarea:focus {
@@ -682,6 +688,26 @@ Loader
     transform: translateX(0.25rem)
   }
 
+  .colweb-2 {
+    flex: 0 0 16.6666%;
+    max-width: 100%;
+  }
+
+  .colweb-3 {
+    flex: 0 0 25%;
+    max-width: 100%;  
+  }
+
+  .colweb-7 {
+    flex: 0 0 58.3333%;
+    max-width: 100%;
+  }
+
+  .web-visit-section {
+    display: flex;
+    justify-content: end;
+  }
+
 
   
   
@@ -691,6 +717,54 @@ Loader
       display: none;
     }
 
+    .colweb-2 {
+    flex: 0 0 16.6666%;
+    max-width: 100%;
   }
+
+  .colweb-3 {
+    flex: 0 0 25%;
+    max-width: 100%;
+  }
+
+  .colweb-7 {
+    flex: 0 0 58.3333%;
+    max-width: 100%;
+  }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .notification {
+     
+      width: 16rem;
+      height: 7rem;
+    }
+
+    .colweb-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .colweb-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .colweb-7 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .web-visit-section {
+      justify-content: center;
+    }
+
+    .web-image-section {
+      justify-content: center;
+      display: flex;
+      max-width: 50%;
+    }
+}
 
  

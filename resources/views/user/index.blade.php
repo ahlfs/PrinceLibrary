@@ -32,7 +32,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <div class="profile-card-2"><img src="/assets/images/aku3.jpg"
+                                    <div class="profile-card-2"><img src="/assets/images/aku6.jpg"
                                             class="img img-responsive">
                                         <div class="profile-name">Prince Al</div>
                                     </div>
@@ -125,7 +125,7 @@
                         </div>
 
                         <div class="group mt-4" id="formNameMessage">
-                            <input placeholder="" type="text" id="nameku" name="name" required>
+                            <input placeholder="" type="text" id="nameku" name="name" required autocomplete="off">
                             <label for="nameku">Name</label>
                         </div>
                         <div class="group" id="formEmailMessage">
@@ -133,7 +133,7 @@
                             <label for="emailku">Email</label>
                         </div>
                         <div class="group" id="formMessage">
-                            <textarea placeholder="" id="comment" name="messageku" rows="5" required=""></textarea>
+                            <textarea placeholder="" id="comment" name="messageku" rows="5" required="" autocomplete="off"></textarea>
                             <label for="messageku">Message</label>
                         </div>
                         <div class="d-flex justify-content-center">
@@ -149,7 +149,7 @@
                 <!-- ***** Send Message End ***** -->
 
 
-                <!-- ***** Gaming Library Start ***** -->
+                <!-- ***** Other Website Start ***** -->
                 <div class="gaming-library">
                     <div class="col-lg-12">
                         <div class="heading-section">
@@ -160,29 +160,31 @@
                                 @foreach ($data as $d)
                                 <div class="row">
                                     
-                                    <div class="col-8">
-                                        <li><img src="/assets/images/harmonify.png" alt=""
-                                                class="templatemo-item"></li>
-                                        <li>
+                                    <div class="colweb-2 d-flex justify-content-center">
+                                        <li class="web-image-section "><img src="{{ asset('storage/uploads/uploaded_image/' . $d->web_image) }}" alt=""></li>
+                                            </div>
+                                            <div class="colweb-7">
+                                        <li class="web-name-section">
                                             <h4>{{ $d->web_name }}</h4><span>Social Media</span>
                                         </li>
-                                        <li>
+                                        <li class="web-status-section">
                                             <h4>Status</h4>
-                                            @if ($d->status == 0)
+                                            @if ($d->status == 1)
                                             <span><i class="fa-solid fa-circle-check" style="color: green"></i> Active</span>
                                             @else
                                             <span><i class="fa-solid fa-circle-xmark" style="color: red"></i> Deactive</span>
                                             @endif
                                         </li>
                                     </div>
-                                    @if ($d->status == 0)
-                                    <div class="col-3 d-flex justify-content-end">
+                                    @if ($d->status == 1)
+                                    <div class="colweb-3">
                                         <li>
-                                            <div class="main-border-button"><a target="_blank"
+                                            <div class="main-border-button web-visit-section"><a target="_blank"
                                                     href="https://www.melodica.my.id">Visit</a>
                                             </div>
                                         </li>
                                     </div>
+                                    
                                     @endif
                                 </div>
                                 @endforeach
@@ -196,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- ***** Gaming Library End ***** -->
+                <!-- ***** Other Website End ***** -->
             </div>
         </div>
     </div>

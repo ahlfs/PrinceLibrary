@@ -76,7 +76,7 @@
                                 <textarea class="myform-input__field myform-input__field--textarea" name="content_english" disabled>{{ $d->content_english }}</textarea>
                             </div>
                         </div>
-                        <div class="col-6 mt-3">
+                        <div class="colform-50 mt-3">
                             <div class="myform-input">
                                 <div class="d-flex">
                                     <label class="myform-input__label">Image</label>

@@ -39,6 +39,7 @@ class AuthController extends Controller
 
     function logout() {
         session()->forget('isLogin');
+        session()->flash('postsuccess', 'Account Logged Out !');
         return redirect()->route('login_page');
     }
 

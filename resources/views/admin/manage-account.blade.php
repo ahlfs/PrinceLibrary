@@ -12,13 +12,13 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-5  ">
         <h1 class="h3 mb-0 text-gray-100"><i class="fa-solid fa-gear"></i> Manage Account</h1>
     </div>
-    <div class="d-flex mt-3">
+    <div class="d-flex mt-3 manage-acc">
     @foreach ($data as $d)
         <div class="cookie-card mt-3 mx-3">
             <div class="row">
                 <div class="col-6">
                     <span class="title text-uppercase">
-                        <div class="d-flex">
+                        <div class="d-flex manage-acc">
                         @if ($d->level == 1)
                             <span class="badge badge-primary"><i class="fa-solid fa-crown"></i> ADMIN</span>
                         @elseif ($d->level == 0)
@@ -32,7 +32,7 @@
                     </span>
                 </div>
                 <div class="col-6">
-                    <div class="actions d-flex justify-content-end">
+                    <div class="actions d-flex justify-content-end manage-acc-button">
                         <a class="accept" href="/manage-account/edit/{{ $d->page_id }}">
                             <i class="fa-solid fa-gear"></i>
                         </a>

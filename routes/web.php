@@ -7,6 +7,7 @@ use App\Http\Controllers\WritingController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MailController;
 use App\Http\Middleware\CheckLogin;
 
@@ -39,23 +40,21 @@ Route::get('/login', function () {
 
 Route::post('/login/authentication', [AuthController::class, 'login'])->name('authentication');
 
-// ADMIN ROUTES
-
-Route::get('/testing', function () {
-    return view('/mail/message-mail');
-})->name('testing');
-
 // Send Email Routes
 
-Route::post('/email-send', [MailController::class, 'send_email']);
+Route::post('/email-send', [MailController::class, 'send_email'])->middleware('throttle:sendemail');
 
 
 Route::middleware(CheckLogin::class)->group(function () {
-
-    // Account Page Routes
+    // Dashboard Page Routes
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-    Route::get('/dashboard', [AdminController::class, 'dashboard_page'])->name('dashboard_page');
+    Route::get('/dashboard', [DashboardController::class, 'dashboard_page'])->name('dashboard_page');
+    
+    Route::get('/dashboard/delete-message/{id}', [DashboardController::class, 'delete_message']);
+
+    // Account Page Routes
+   
 
     Route::get('/manage-account', [AdminController::class, 'manage_account'])->name('manage_account');
 

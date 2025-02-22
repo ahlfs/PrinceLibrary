@@ -152,7 +152,8 @@ p {
 }
 
 .templatemo-item {
-	max-width: 80px; 
+	width: 80px; 
+  height: auto;
 	border-radius: 23px;
 }
 
@@ -774,7 +775,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/purple-bg2.png);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
@@ -904,6 +905,8 @@ Gaming Library Style
 
 .gaming-library .item ul li img {
   margin-top: -30px;
+  width: 100%;
+  height: auto;
 }
 
 .gaming-library .item ul li {
@@ -912,13 +915,10 @@ Gaming Library Style
 }
 
 .gaming-library .item ul li:first-child {
-  width: 110px;
+  width: 100%;
 }
 
-.gaming-library .item ul li:last-child {
-  width: 15%;
-  text-align: right;
-}
+
 
 .gaming-library .item ul li h4 {
   font-size: 15px;

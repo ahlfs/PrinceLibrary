@@ -9,7 +9,7 @@
 
         
 
-          <!-- ***** Other Start ***** -->
+          <!-- ***** Works List Start ***** -->
           <div class="other-games header-text">
             <div class="row">
               <div class="col-lg-12">
@@ -31,7 +31,7 @@
               
             </div>
           </div>
-          <!-- ***** Other End ***** -->
+          <!-- ***** Works List End ***** -->
 
           
 

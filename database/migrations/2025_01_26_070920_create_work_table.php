@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('github_link')->nullable();
             $table->string('web_link')->nullable();
             $table->string('youtube_link')->nullable();
+            $table->timestamp('last_update')->nullable();
             $table->timestamps();
         });
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('sender_email');
             $table->text('sender_message');
             $table->boolean('anonymous');
-            $table->dateTime('send_date');
+            $table->string('send_date');
             $table->timestamps();
         });
     }

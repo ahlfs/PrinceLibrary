@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class WorkController extends Controller
 {
@@ -39,7 +40,11 @@ class WorkController extends Controller
             $data->view_encounter += 1;
             $data->save();
             $upload_date = $data->created_at->format('F j, Y');
-            $edit_date = $data->updated_at->format('F j, Y');
+            if ($data->last_update) {
+                $edit_date = Carbon::parse($data->last_update)->format('F j, Y');
+            } else {
+                $edit_date = null;
+            }
             return view('/user/work-detail', ['data' => $data, 'upload_date' => $upload_date, 'edit_date' => $edit_date]);
         } else {
             abort(404, 'Ngapain kau suki');
@@ -148,6 +153,7 @@ class WorkController extends Controller
             $download_file->move(storage_path('app/public/uploads/uploaded_file/' . $newDirUnique . '/'), $download_file_name);
             $work->download_file = $newDirUnique . '/' . $download_file_name;
         }
+        $work->last_update = now();
         $work->save();
         session()->flash('postsuccess', 'Post Edited Successfully');
         return redirect()->route('manage_page_works'); // Atau redirect yang sesuai 

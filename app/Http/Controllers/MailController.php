@@ -44,7 +44,7 @@ class MailController extends Controller
         $personal_message->sender_name = $name;
         $personal_message->sender_email = $email;
         $personal_message->sender_message = $messageku;
-        $personal_message->send_date = $message_date;
+        $personal_message->send_date = $message_date_final;
         if ($anonymous == 'on') {
             $personal_message->anonymous = true;
         }
@@ -62,4 +62,6 @@ class MailController extends Controller
         session()->flash('postsuccess', 'Message Sent !');
         return redirect()->back();
     }
+
+   
 }

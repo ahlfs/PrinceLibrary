@@ -8,10 +8,7 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    function dashboard_page()
-    {
-        return view('/admin/index');
-    }
+   
 
     function manage_account()
     {
